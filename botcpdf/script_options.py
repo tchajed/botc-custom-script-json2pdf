@@ -152,6 +152,8 @@ class ScriptOptions:
             "player_count": 3,
             # we don't require this, but we do allow it
             "filename": None,
+            "script_name": None,
+            "easy_print_pdf": None,
         }
 
     def _set_default_options(self) -> None:

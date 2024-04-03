@@ -54,7 +54,8 @@ def main():
 
     for variation in variations:
         script_options = variation["options"]
-        script = Script(script_name, script_data, script_options)
+        script_options['script_name'] = script_name
+        script = Script(script_data, script_options)
         print(f"""Rendering "{script.title}" as {variation["name"]}…""")
         script.render()
 
